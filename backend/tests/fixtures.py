@@ -1,6 +1,7 @@
 """A small synthetic financial report PDF for tests. Every name and figure is invented."""
 import io
 import json
+from datetime import datetime, timezone
 
 from fpdf import FPDF
 
@@ -25,6 +26,9 @@ PAGES = [
 
 def report_pdf():
     pdf = FPDF()
+    # A fixed creation date keeps the bytes identical between calls; otherwise two uploads either side of
+    # a second boundary differ, and the "same file twice is stored once" test fails at random.
+    pdf.set_creation_date(datetime(2026, 1, 1, tzinfo=timezone.utc))
     pdf.set_font("Helvetica", size=11)
     for lines in PAGES:
         pdf.add_page()
