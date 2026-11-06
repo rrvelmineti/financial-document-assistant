@@ -1,0 +1,19 @@
+# Local data: SQLite database, uploads
+data/
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# Node
+frontend/node_modules/
+frontend/dist/
+# Credentials
+.env
+.env.*
+!.env.example
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

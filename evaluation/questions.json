@@ -1,0 +1,400 @@
+[
+  {
+    "id": "A01",
+    "question": "What was the Deposit Insurance Fund's total fund balance at December 31, 2024?",
+    "document": "fdic-2024-annual-report-financial-section.pdf",
+    "must_contain": [
+      "137,101,160"
+    ],
+    "accepted_pages": [
+      2,
+      3
+    ],
+    "note": "In thousands of dollars.",
+    "evidence": [
+      "Fund Balance",
+      "137,101,160"
+    ]
+  },
+  {
+    "id": "A02",
+    "question": "What was the Deposit Insurance Fund's net income for 2024?",
+    "document": "fdic-2024-annual-report-financial-section.pdf",
+    "must_contain": [
+      "15,259,556"
+    ],
+    "accepted_pages": [
+      3,
+      17
+    ],
+    "note": "In thousands of dollars.",
+    "evidence": [
+      "Net Income",
+      "15,259,556"
+    ]
+  },
+  {
+    "id": "A03",
+    "question": "How much assessment revenue did the Deposit Insurance Fund record in 2024?",
+    "document": "fdic-2024-annual-report-financial-section.pdf",
+    "must_contain": [
+      "11,643,463"
+    ],
+    "accepted_pages": [
+      3
+    ],
+    "note": "In thousands of dollars.",
+    "evidence": [
+      "Assessments",
+      "11,643,463"
+    ]
+  },
+  {
+    "id": "A04",
+    "question": "What was the DIF reserve ratio as of September 30, 2024?",
+    "document": "fdic-2024-annual-report-financial-section.pdf",
+    "must_contain": [
+      "1.25 percent"
+    ],
+    "accepted_pages": [
+      14
+    ],
+    "note": "",
+    "evidence": [
+      "reserve ratio was 1.25 percent"
+    ]
+  },
+  {
+    "id": "A05",
+    "question": "For how many consecutive years has the FDIC received unmodified audit opinions on the DIF and FRF financial statements?",
+    "document": "fdic-2024-annual-report-financial-section.pdf",
+    "must_contain": [
+      "33"
+    ],
+    "accepted_pages": [
+      31
+    ],
+    "note": "The text says '33rd consecutive year'.",
+    "evidence": [
+      "33rd consecutive year"
+    ]
+  },
+  {
+    "id": "A06",
+    "question": "What were the SEC's total budgetary resources for fiscal year 2025?",
+    "document": "sec-fy2025-agency-financial-report.pdf",
+    "must_contain": [
+      "3.1 billion"
+    ],
+    "accepted_pages": [
+      22
+    ],
+    "note": "",
+    "evidence": [
+      "total budgetary resources equaled $3.1 billion"
+    ]
+  },
+  {
+    "id": "A07",
+    "question": "What were the SEC's total assets at September 30, 2025?",
+    "document": "sec-fy2025-agency-financial-report.pdf",
+    "must_contain": [
+      "15.5 billion"
+    ],
+    "accepted_pages": [
+      19
+    ],
+    "note": "Table 1.1 also shows 15,530 in millions.",
+    "evidence": [
+      "total assets",
+      "15.5 billion"
+    ]
+  },
+  {
+    "id": "A08",
+    "question": "What were the SEC's total earned revenues for fiscal year 2025?",
+    "document": "sec-fy2025-agency-financial-report.pdf",
+    "must_contain": [
+      "4.4 billion"
+    ],
+    "accepted_pages": [
+      21
+    ],
+    "note": "",
+    "evidence": [
+      "Earned Revenues",
+      "4.4 billion"
+    ]
+  },
+  {
+    "id": "A09",
+    "question": "What was the Section 31 fee rate cited in the SEC's FY 2025 results of operations?",
+    "document": "sec-fy2025-agency-financial-report.pdf",
+    "must_contain": [
+      "27.80"
+    ],
+    "accepted_pages": [
+      19,
+      21
+    ],
+    "note": "Per million dollars of transactions.",
+    "evidence": [
+      "27.80 per million"
+    ]
+  },
+  {
+    "id": "A10",
+    "question": "How many SEC employees participated in VERA or VSIP as of September 30, 2025, and at what cost?",
+    "document": "sec-fy2025-agency-financial-report.pdf",
+    "must_contain": [
+      "472",
+      "23.9 million"
+    ],
+    "accepted_pages": [
+      22,
+      60
+    ],
+    "note": "",
+    "evidence": [
+      "472 employees"
+    ]
+  },
+  {
+    "id": "A11",
+    "question": "What type of audit opinion did the SEC receive on its FY 2025 financial statements?",
+    "document": "sec-fy2025-agency-financial-report.pdf",
+    "must_contain": [
+      "unmodified"
+    ],
+    "accepted_pages": [
+      110
+    ],
+    "note": "",
+    "evidence": [
+      "Audit Opinion: Unmodified"
+    ]
+  },
+  {
+    "id": "A12",
+    "question": "What was the U.S. government's budget deficit for fiscal year 2025?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "1.8 trillion"
+    ],
+    "accepted_pages": [
+      9,
+      22
+    ],
+    "note": "",
+    "evidence": [
+      "budget deficit",
+      "1.8 trillion"
+    ]
+  },
+  {
+    "id": "A13",
+    "question": "What was the federal government's net operating cost for FY 2025?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "2.1 trillion"
+    ],
+    "accepted_pages": [
+      9,
+      11,
+      12,
+      22,
+      25,
+      26,
+      28
+    ],
+    "note": "",
+    "evidence": [
+      "net operating cost",
+      "2.1 trillion"
+    ]
+  },
+  {
+    "id": "A14",
+    "question": "What were the U.S. government's gross costs in FY 2025?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "8.1 trillion"
+    ],
+    "accepted_pages": [
+      9,
+      11,
+      22,
+      27
+    ],
+    "note": "",
+    "evidence": [
+      "gross costs",
+      "8.1 trillion"
+    ]
+  },
+  {
+    "id": "A15",
+    "question": "What was the debt-to-GDP ratio at the end of FY 2025?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "99 percent"
+    ],
+    "accepted_pages": [
+      10,
+      15,
+      16,
+      23,
+      33,
+      35,
+      38,
+      54,
+      145,
+      167,
+      168,
+      170,
+      177,
+      223
+    ],
+    "note": "Debt held by the public as a percent of GDP.",
+    "evidence": [
+      "debt-to-GDP",
+      "99 percent"
+    ]
+  },
+  {
+    "id": "A16",
+    "question": "What debt-to-GDP ratio is projected for 2100 under current policy?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "576 percent"
+    ],
+    "accepted_pages": [
+      10,
+      16,
+      23,
+      35,
+      38,
+      145,
+      167,
+      168,
+      222
+    ],
+    "note": "",
+    "evidence": [
+      "576 percent"
+    ]
+  },
+  {
+    "id": "A17",
+    "question": "By how much are 75-year social insurance expenditures projected to exceed social insurance revenues?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "88.4 trillion"
+    ],
+    "accepted_pages": [
+      10,
+      22,
+      23,
+      40
+    ],
+    "note": "Present value, per the Statements of Social Insurance.",
+    "evidence": [
+      "88.4 trillion"
+    ]
+  },
+  {
+    "id": "A18",
+    "question": "How much did customs duties increase in FY 2025?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "133.9 billion"
+    ],
+    "accepted_pages": [
+      9,
+      13,
+      28
+    ],
+    "note": "",
+    "evidence": [
+      "customs duties",
+      "133.9 billion"
+    ]
+  },
+  {
+    "id": "A19",
+    "question": "For how many years has GAO issued a disclaimer of opinion on the government's consolidated financial statements?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "28"
+    ],
+    "accepted_pages": [
+      19,
+      23
+    ],
+    "note": "'As it has for the past 28 years'.",
+    "evidence": [
+      "past 28 years",
+      "disclaimer"
+    ]
+  },
+  {
+    "id": "A20",
+    "question": "How many federal consolidation entities provided financial information for the FY 2025 Financial Report?",
+    "document": "treasury-fy2025-financial-report-us-government.pdf",
+    "must_contain": [
+      "167"
+    ],
+    "accepted_pages": [
+      19
+    ],
+    "note": "",
+    "evidence": [
+      "167 federal"
+    ]
+  },
+  {
+    "id": "U01",
+    "question": "What was Apple's total revenue in fiscal year 2025?",
+    "document": null,
+    "must_contain": [],
+    "accepted_pages": [],
+    "note": "Not answered in any of the three documents.",
+    "evidence": []
+  },
+  {
+    "id": "U02",
+    "question": "What was Tesla's market value at the end of 2025?",
+    "document": null,
+    "must_contain": [],
+    "accepted_pages": [],
+    "note": "Not answered in any of the three documents.",
+    "evidence": []
+  },
+  {
+    "id": "U03",
+    "question": "How many banks failed in 2026?",
+    "document": null,
+    "must_contain": [],
+    "accepted_pages": [],
+    "note": "Not answered in any of the three documents.",
+    "evidence": []
+  },
+  {
+    "id": "U04",
+    "question": "What was the S&P 500 index level at the end of fiscal year 2025?",
+    "document": null,
+    "must_contain": [],
+    "accepted_pages": [],
+    "note": "Not answered in any of the three documents.",
+    "evidence": []
+  },
+  {
+    "id": "U05",
+    "question": "What salary did the SEC Chairman earn in fiscal year 2025?",
+    "document": null,
+    "must_contain": [],
+    "accepted_pages": [],
+    "note": "Not answered in any of the three documents.",
+    "evidence": []
+  }
+]

@@ -1,0 +1,8 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pypdf>=5.0
+faiss-cpu>=1.8
+numpy>=1.26
+sqlalchemy>=2.0.30,<3
+psycopg[binary]>=3.1

@@ -1,0 +1,1088 @@
+{
+  "summary": {
+    "run_on": "2026-11-05",
+    "embedder": "hashing-v1",
+    "model": null,
+    "top_k": 6,
+    "answerable": 20,
+    "unanswerable": 5,
+    "retrieval_hits": 16
+  },
+  "results": [
+    {
+      "id": "A01",
+      "question": "What was the Deposit Insurance Fund's total fund balance at December 31, 2024?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 8,
+          "score": 0.2601
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 15,
+          "score": 0.2585
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 22,
+          "score": 0.2456
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 5,
+          "score": 0.2302
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 2,
+          "score": 0.2266
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 10,
+          "score": 0.2236
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A02",
+      "question": "What was the Deposit Insurance Fund's net income for 2024?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 3,
+          "score": 0.2352
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 5,
+          "score": 0.2313
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 22,
+          "score": 0.231
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 20,
+          "score": 0.2252
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 6,
+          "score": 0.2
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 26,
+          "score": 0.2
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A03",
+      "question": "How much assessment revenue did the Deposit Insurance Fund record in 2024?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 22,
+          "score": 0.2333
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 5,
+          "score": 0.2263
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 26,
+          "score": 0.2242
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 10,
+          "score": 0.2192
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 14,
+          "score": 0.2096
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 134,
+          "score": 0.1984
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A04",
+      "question": "What was the DIF reserve ratio as of September 30, 2024?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 69,
+          "score": 0.3255
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 133,
+          "score": 0.3089
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 100,
+          "score": 0.3037
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 135,
+          "score": 0.3035
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 117,
+          "score": 0.2932
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 91,
+          "score": 0.2848
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A05",
+      "question": "For how many consecutive years has the FDIC received unmodified audit opinions on the DIF and FRF financial statements?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 26,
+          "score": 0.3193
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 27,
+          "score": 0.2875
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 30,
+          "score": 0.2589
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.2532
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 31,
+          "score": 0.2502
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "score": 0.249
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A06",
+      "question": "What were the SEC's total budgetary resources for fiscal year 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3475
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.3131
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "score": 0.309
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2579
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2521
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 18,
+          "score": 0.2509
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A07",
+      "question": "What were the SEC's total assets at September 30, 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 20,
+          "score": 0.2978
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 69,
+          "score": 0.2962
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2792
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "score": 0.276
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2737
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 63,
+          "score": 0.2594
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A08",
+      "question": "What were the SEC's total earned revenues for fiscal year 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3475
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.3378
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.3268
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2533
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 241,
+          "score": 0.2515
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 40,
+          "score": 0.2476
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A09",
+      "question": "What was the Section 31 fee rate cited in the SEC's FY 2025 results of operations?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.4227
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 36,
+          "score": 0.3042
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 7,
+          "score": 0.3011
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 35,
+          "score": 0.297
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 19,
+          "score": 0.292
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 18,
+          "score": 0.2905
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A10",
+      "question": "How many SEC employees participated in VERA or VSIP as of September 30, 2025, and at what cost?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "score": 0.3034
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 69,
+          "score": 0.2887
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 160,
+          "score": 0.2872
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 60,
+          "score": 0.2751
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2696
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 100,
+          "score": 0.2682
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A11",
+      "question": "What type of audit opinion did the SEC receive on its FY 2025 financial statements?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.3425
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 65,
+          "score": 0.2982
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 166,
+          "score": 0.2971
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.2685
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 18,
+          "score": 0.2653
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 39,
+          "score": 0.264
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A12",
+      "question": "What was the U.S. government's budget deficit for fiscal year 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.3461
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3318
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.33
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3096
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 230,
+          "score": 0.2999
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.2858
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A13",
+      "question": "What was the federal government's net operating cost for FY 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "score": 0.3898
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 22,
+          "score": 0.3482
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 11,
+          "score": 0.3457
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 25,
+          "score": 0.344
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 26,
+          "score": 0.3416
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3371
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A14",
+      "question": "What were the U.S. government's gross costs in FY 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.4392
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3756
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "score": 0.3361
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 87,
+          "score": 0.3016
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.2934
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 98,
+          "score": 0.2781
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A15",
+      "question": "What was the debt-to-GDP ratio at the end of FY 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 33,
+          "score": 0.4862
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 16,
+          "score": 0.4376
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 35,
+          "score": 0.4236
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.42
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.4167
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 35,
+          "score": 0.4147
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A16",
+      "question": "What debt-to-GDP ratio is projected for 2100 under current policy?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.3718
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 16,
+          "score": 0.3621
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "score": 0.3293
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 146,
+          "score": 0.3284
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 39,
+          "score": 0.318
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 38,
+          "score": 0.3132
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A17",
+      "question": "By how much are 75-year social insurance expenditures projected to exceed social insurance revenues?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 22,
+          "score": 0.2781
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 22,
+          "score": 0.2742
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 10,
+          "score": 0.2676
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 221,
+          "score": 0.2223
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 149,
+          "score": 0.201
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 149,
+          "score": 0.1935
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A18",
+      "question": "How much did customs duties increase in FY 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 25,
+          "score": 0.2659
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 73,
+          "score": 0.2529
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 174,
+          "score": 0.2464
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.2429
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 73,
+          "score": 0.2382
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "score": 0.2335
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A19",
+      "question": "For how many years has GAO issued a disclaimer of opinion on the government's consolidated financial statements?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.3941
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 217,
+          "score": 0.3547
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 234,
+          "score": 0.3473
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 50,
+          "score": 0.3356
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "score": 0.3329
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 79,
+          "score": 0.3287
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A20",
+      "question": "How many federal consolidation entities provided financial information for the FY 2025 Financial Report?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.4114
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.3663
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.3333
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 159,
+          "score": 0.3113
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 205,
+          "score": 0.3047
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.297
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "U01",
+      "question": "What was Apple's total revenue in fiscal year 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3824
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 223,
+          "score": 0.2152
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 54,
+          "score": 0.2081
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 40,
+          "score": 0.2066
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 237,
+          "score": 0.2048
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2004
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": false,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U02",
+      "question": "What was Tesla's market value at the end of 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 21,
+          "score": 0.2734
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.261
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 35,
+          "score": 0.2395
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 33,
+          "score": 0.2387
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 215,
+          "score": 0.2292
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 15,
+          "score": 0.2288
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": false,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U03",
+      "question": "How many banks failed in 2026?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 40,
+          "score": 0.1491
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 122,
+          "score": 0.1451
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 39,
+          "score": 0.1314
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 107,
+          "score": 0.1259
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 223,
+          "score": 0.1152
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 12,
+          "score": 0.1141
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": false,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U04",
+      "question": "What was the S&P 500 index level at the end of fiscal year 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3068
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 23,
+          "score": 0.2915
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 21,
+          "score": 0.287
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2701
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 222,
+          "score": 0.2614
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 56,
+          "score": 0.2577
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": false,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U05",
+      "question": "What salary did the SEC Chairman earn in fiscal year 2025?",
+      "status": "no_ai",
+      "answer": null,
+      "reason": "No Gemini key is set, so here are the most relevant passages instead of an answer.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3637
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 40,
+          "score": 0.2351
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 56,
+          "score": 0.2152
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 53,
+          "score": 0.2114
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2059
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 223,
+          "score": 0.1984
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": false,
+      "false_answer_shown": false
+    }
+  ]
+}

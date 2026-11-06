@@ -1,0 +1,3 @@
+-r requirements.txt
+httpx>=0.27        # FastAPI test client
+fpdf2>=2.7         # builds the synthetic PDF used by tests

@@ -1,0 +1,16 @@
+# Local PostgreSQL for the document and question records.
+#   docker compose up -d
+#   set DATABASE_URL=postgresql+psycopg://fda:fda@localhost:5432/fda
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: fda
+      POSTGRES_PASSWORD: fda
+      POSTGRES_DB: fda
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
