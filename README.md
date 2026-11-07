@@ -12,8 +12,20 @@ don't contain the answer, it says so.
 - **Stack:** Python, FastAPI, FAISS, Gemini (embeddings and answers), PostgreSQL, React, TypeScript
 - **Evaluated on** three public U.S. government financial reports (FDIC, SEC, Treasury; 410 pages)
   with 25 questions, 5 of which the documents cannot answer
-- **Docs:** [problem statement](docs/problem-statement.md) · [user stories](docs/user-stories.md) ·
+- **Docs:** [implementation playbook](docs/implementation-playbook.md) ·
+  [problem statement](docs/problem-statement.md) · [user stories](docs/user-stories.md) ·
   [risk note](docs/risk-note.md) · [UAT](docs/uat.md) · [evaluation questions](evaluation/questions.json)
+
+## The implementation case
+
+**Client problem.** A finance team searches long reports for figures by hand, and a wrong figure in a
+board pack costs more than a slow one.
+**What was delivered.** An assistant that answers only from the client's documents, shows the exact
+source line, and withholds any answer it cannot verify.
+**How it is rolled out safely.** Go-live criteria are agreed before the pilot and checked by code
+(`evaluation/go_live.py`). Withheld and not-found answers go to a human review queue, and a usage
+report tracks adoption and quality during hypercare. The full plan, from discovery questions to
+handover, is in the [implementation playbook](docs/implementation-playbook.md).
 
 ## How an answer is made
 
@@ -49,6 +61,25 @@ documents (checked by searching all 410 pages).
 | Answer accuracy, citation accuracy, unanswerable questions declined | Run `python evaluation/run_eval.py --answers` |
 
 The full run needs a Gemini key and writes its results to `evaluation/results/`.
+
+### Go-live gate
+
+```
+python evaluation/go_live.py
+```
+
+Compares the latest full evaluation with the criteria in
+[`evaluation/go_live_criteria.json`](evaluation/go_live_criteria.json) (no invented answers, at least
+80% answer accuracy, at least 85% citation accuracy) and writes a GO, NO-GO or NOT READY decision with a
+sign-off line to `evaluation/results/go-live.md`. With only the offline run, the decision is NOT READY.
+
+## After go-live: review queue and usage
+
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /api/review-queue` | Withheld and not-found answers no one has reviewed yet |
+| `POST /api/reviews/{question_id}` | Record a reviewer's decision: `confirmed_gap`, `answer_found`, `retrieval_miss`, `document_missing` or `other` |
+| `GET /api/usage` | Questions asked, share answered, withheld and not found, median latency, reviews outstanding |
 
 ## Run it
 
@@ -92,8 +123,8 @@ evaluation, and the frontend tests and build.
 - **Statement tables keep their units and years.** "(Dollars in Thousands)" and "2024 2023" are often
   extracted far from the figures; they are attached to each passage from that page and shown to the
   model, but kept out of the search vectors so they don't distort retrieval.
-- **PostgreSQL holds the record:** documents, passages, vectors and a log of every question and
-  outcome. FAISS is rebuilt from it on start-up, so there is one source of truth.
+- **PostgreSQL holds the record:** documents, passages, vectors, a log of every question and
+  outcome, and reviewers' decisions. FAISS is rebuilt from it on start-up, so there is one source of truth.
 - **Offline mode.** Without a key, keyword-hashing search keeps the app, tests and CI working with no
   network.
 

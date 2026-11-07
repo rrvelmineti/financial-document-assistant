@@ -45,6 +45,20 @@ questions = Table(
     Column("model", String(100)),
     Column("latency_ms", Integer),
 )
+reviews = Table(
+    "reviews", metadata,
+    Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("question_id", Integer, ForeignKey("questions.id", ondelete="CASCADE"), nullable=False, unique=True),
+    Column("decision", String(20), nullable=False),   # see REVIEW_DECISIONS
+    Column("reviewer", String(100), nullable=False),
+    Column("note", Text, nullable=False, default=""),
+    Column("reviewed_at", DateTime(timezone=True), nullable=False),
+)
+
+# Outcomes a person must look at before the business relies on them.
+NEEDS_REVIEW = ("unverified", "not_found")
+# What a reviewer can decide about one of them.
+REVIEW_DECISIONS = ("confirmed_gap", "answer_found", "retrieval_miss", "document_missing", "other")
 
 
 def now():
@@ -148,6 +162,56 @@ class Store:
                 asked_at=now(), question=question[:4000], status=result["status"], answer=result.get("answer"),
                 citations=json.loads(json.dumps(result.get("citations", []))), model=result.get("model"),
                 latency_ms=latency_ms))
+
+    def review_queue(self, limit=50):
+        """Questions whose answer was withheld or not found, and that no one has reviewed yet (oldest first)."""
+        with self.engine.connect() as conn:
+            rows = conn.execute(
+                select(questions.c.id, questions.c.asked_at, questions.c.question, questions.c.status, questions.c.model)
+                .outerjoin(reviews, reviews.c.question_id == questions.c.id)
+                .where(questions.c.status.in_(NEEDS_REVIEW), reviews.c.id.is_(None))
+                .order_by(questions.c.asked_at, questions.c.id).limit(limit)).mappings()
+            return [dict(r) for r in rows]
+
+    def record_review(self, question_id, decision, reviewer, note=""):
+        """Record one reviewer's decision. Returns the review, or None if there is no such question."""
+        if decision not in REVIEW_DECISIONS:
+            raise ValueError(f"decision must be one of: {', '.join(REVIEW_DECISIONS)}")
+        with self.engine.begin() as conn:
+            if conn.execute(select(questions.c.id).where(questions.c.id == question_id)).first() is None:
+                return None
+            conn.execute(delete(reviews).where(reviews.c.question_id == question_id))     # latest decision wins
+            conn.execute(insert(reviews).values(question_id=question_id, decision=decision, reviewer=reviewer[:100],
+                                                note=note[:2000], reviewed_at=now()))
+            return dict(conn.execute(select(reviews).where(reviews.c.question_id == question_id)).mappings().one())
+
+    def usage_report(self):
+        """Adoption and quality figures from the question log, for the weeks after go-live."""
+        with self.engine.connect() as conn:
+            by_status = dict(conn.execute(select(questions.c.status, func.count()).group_by(questions.c.status)).all())
+            latencies = sorted(r[0] for r in conn.execute(select(questions.c.latency_ms)
+                                                          .where(questions.c.latency_ms.is_not(None))))
+            reviewed = dict(conn.execute(select(reviews.c.decision, func.count()).group_by(reviews.c.decision)).all())
+            first, last = conn.execute(select(func.min(questions.c.asked_at), func.max(questions.c.asked_at))).one()
+        total = sum(by_status.values())
+        needs = sum(by_status.get(s, 0) for s in NEEDS_REVIEW)
+
+        def share(n):
+            return round(n / total, 3) if total else None
+        return {
+            "questions": total,
+            "first_question_at": first.isoformat() if first else None,
+            "last_question_at": last.isoformat() if last else None,
+            "by_status": by_status,
+            "answered_share": share(by_status.get("answered", 0)),
+            "withheld_share": share(by_status.get("unverified", 0)),
+            "not_found_share": share(by_status.get("not_found", 0)),
+            "median_latency_ms": latencies[len(latencies) // 2] if latencies else None,
+            "needs_review": needs,
+            "reviewed": sum(reviewed.values()),
+            "awaiting_review": needs - sum(reviewed.values()),
+            "review_decisions": reviewed,
+        }
 
     def stats(self):
         with self.engine.connect() as conn:

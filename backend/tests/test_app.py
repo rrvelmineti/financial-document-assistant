@@ -29,7 +29,7 @@ class AppTestCase(unittest.TestCase):
             env["DATABASE_URL"] = os.environ["TEST_DATABASE_URL"]
             engine = create_engine(env["DATABASE_URL"])
             with engine.begin() as conn:
-                conn.execute(text("DROP TABLE IF EXISTS questions, chunks, documents CASCADE"))
+                conn.execute(text("DROP TABLE IF EXISTS reviews, questions, chunks, documents CASCADE"))
             engine.dispose()
         self.settings = load_settings(env)
 
@@ -204,6 +204,61 @@ class AnswerTests(AppTestCase):
         for raw in (None, [], {"found": "yes"}, {"found": True, "answer": "", "citations": []}):
             with self.subTest(raw=raw):
                 self.assertNotEqual(verify(raw, [], "m")["status"], "answered")
+
+
+class ReviewAndUsageTests(AppTestCase):
+    """The human review step and the hypercare usage report."""
+
+    def ask(self, question="What was net income?"):
+        return self.client.post("/api/ask", json={"question": question}).json()
+
+    def setUp(self):
+        super().setUp()
+        self.client_with(NET_INCOME, {"found": False, "answer": "", "citations": []},
+                         {**NET_INCOME, "answer": "Net income was 9,999 thousand dollars."})
+        self.upload()
+        self.ask()                                   # answered
+        self.ask("Who audited the statements?")      # not found
+        self.ask("What was net income in total?")    # withheld
+
+    def test_withheld_and_not_found_answers_wait_for_review(self):
+        queue = self.client.get("/api/review-queue").json()
+        self.assertEqual([q["status"] for q in queue], ["not_found", "unverified"])
+        self.assertIsInstance(queue[0]["asked_at"], str)
+
+    def test_a_reviewed_question_leaves_the_queue(self):
+        first = self.client.get("/api/review-queue").json()[0]
+        r = self.client.post(f"/api/reviews/{first['id']}",
+                             json={"decision": "confirmed_gap", "reviewer": "analyst-1", "note": "Not in the report."})
+        self.assertEqual(r.status_code, 201)
+        self.assertEqual(r.json()["decision"], "confirmed_gap")
+        self.assertEqual(len(self.client.get("/api/review-queue").json()), 1)
+
+    def test_a_second_review_replaces_the_first(self):
+        qid = self.client.get("/api/review-queue").json()[0]["id"]
+        for decision in ("other", "retrieval_miss"):
+            self.client.post(f"/api/reviews/{qid}", json={"decision": decision, "reviewer": "analyst-1"})
+        self.assertEqual(self.client.get("/api/usage").json()["review_decisions"], {"retrieval_miss": 1})
+
+    def test_bad_reviews_are_rejected(self):
+        qid = self.client.get("/api/review-queue").json()[0]["id"]
+        self.assertEqual(self.client.post(f"/api/reviews/{qid}", json={"decision": "looks fine", "reviewer": "a"}).status_code, 422)
+        self.assertEqual(self.client.post("/api/reviews/999", json={"decision": "other", "reviewer": "a"}).status_code, 404)
+        self.assertEqual(self.client.post(f"/api/reviews/{qid}", json={"decision": "other", "reviewer": ""}).status_code, 422)
+
+    def test_usage_report_shows_adoption_and_quality(self):
+        u = self.client.get("/api/usage").json()
+        self.assertEqual(u["questions"], 3)
+        self.assertEqual(u["by_status"], {"answered": 1, "not_found": 1, "unverified": 1})
+        self.assertEqual((u["answered_share"], u["needs_review"], u["awaiting_review"]), (0.333, 2, 2))
+        self.assertIsNotNone(u["median_latency_ms"])
+
+    def test_usage_report_on_an_empty_log(self):
+        self.tearDown()
+        AppTestCase.setUp(self)
+        self.client_with()
+        u = self.client.get("/api/usage").json()
+        self.assertEqual((u["questions"], u["answered_share"], u["median_latency_ms"]), (0, None, None))
 
 
 if __name__ == "__main__":

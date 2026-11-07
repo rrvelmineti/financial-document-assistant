@@ -1,6 +1,6 @@
 # UAT test cases
 
-Run on 5 November 2026. Cases 1 to 16 have automated equivalents in `backend/tests/`,
+Run on 5 November 2026. Cases 1 to 16 and 19 to 22 have automated equivalents in `backend/tests/`,
 `frontend/src/highlight.test.ts` and `evaluation/run_eval.py`, and run on every push (backend on
 PostgreSQL 17 and on Windows with SQLite). Cases 17 and 18 need a Gemini key and are run by hand.
 
@@ -24,3 +24,7 @@ PostgreSQL 17 and on Windows with SQLite). Cases 17 and 18 need a Gemini key and
 | 16 | US-7 | `python evaluation/run_eval.py` (offline) | Retrieval recall reported for 20 questions | 16 of 20 | Pass |
 | 17 | US-7 | `python evaluation/run_eval.py --answers` with a Gemini key | Answer, citation and not-found accuracy reported | | Not yet run |
 | 18 | US-2, US-3 | Upload the three reports in the browser with a Gemini key and ask 3 of the evaluation questions | Verified answers with highlighted source lines | | Not yet run |
+| 19 | Rollout | Ask 3 questions (answered, not found, withheld); open the review queue | Only the not-found and withheld questions are listed | As expected | Pass |
+| 20 | Rollout | Record a review decision; record a second one | Question leaves the queue; latest decision kept; invalid decision rejected | As expected | Pass |
+| 21 | Rollout | Open the usage report | Counts by outcome, shares, median latency, reviews outstanding | As expected | Pass |
+| 22 | Rollout | `python evaluation/go_live.py` on the offline run | NOT READY, with each blocking check listed | NOT READY | Pass |

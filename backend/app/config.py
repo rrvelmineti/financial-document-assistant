@@ -16,7 +16,7 @@ class Settings:
     embedding_model: str
     max_upload_mb: int = 25
     max_pages: int = 600
-    top_k: int = 6
+    top_k: int = 10
 
     @property
     def ai_enabled(self):
