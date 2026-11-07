@@ -1,0 +1,1172 @@
+{
+  "summary": {
+    "run_on": "2026-11-06",
+    "embedder": "hashing-v1",
+    "model": "gemini-3.5-flash-lite",
+    "top_k": 6,
+    "answerable": 20,
+    "unanswerable": 5,
+    "retrieval_hits": 16,
+    "answers_correct": 13,
+    "citations_correct": 13,
+    "answers_withheld": 0,
+    "answerable_said_not_found": 5,
+    "not_found_correct": 5,
+    "false_answers_on_unanswerable": 0
+  },
+  "results": [
+    {
+      "id": "A01",
+      "question": "What was the Deposit Insurance Fund's total fund balance at December 31, 2024?",
+      "status": "error",
+      "answer": null,
+      "reason": "Gemini returned HTTP 503. Check the model ID, API key and quota.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 8,
+          "score": 0.2601
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 15,
+          "score": 0.2585
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 22,
+          "score": 0.2456
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 5,
+          "score": 0.2302
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 2,
+          "score": 0.2266
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 10,
+          "score": 0.2236
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A02",
+      "question": "What was the Deposit Insurance Fund's net income for 2024?",
+      "status": "answered",
+      "answer": "For 2024, the Deposit Insurance Fund reported a net income of $ 15,259,556 thousand.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 3,
+          "quote": "Net Income (Loss) 15,259,556 (9,378,885)"
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 3,
+          "score": 0.2352
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 5,
+          "score": 0.2313
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 22,
+          "score": 0.231
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 20,
+          "score": 0.2252
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 6,
+          "score": 0.2
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 26,
+          "score": 0.2
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A03",
+      "question": "How much assessment revenue did the Deposit Insurance Fund record in 2024?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 22,
+          "score": 0.2333
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 5,
+          "score": 0.2263
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 26,
+          "score": 0.2242
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 10,
+          "score": 0.2192
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 14,
+          "score": 0.2096
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 134,
+          "score": 0.1984
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A04",
+      "question": "What was the DIF reserve ratio as of September 30, 2024?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 69,
+          "score": 0.3255
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 133,
+          "score": 0.3089
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 100,
+          "score": 0.3037
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 135,
+          "score": 0.3035
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 117,
+          "score": 0.2932
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 91,
+          "score": 0.2848
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A05",
+      "question": "For how many consecutive years has the FDIC received unmodified audit opinions on the DIF and FRF financial statements?",
+      "status": "answered",
+      "answer": "The FDIC received unmodified opinions for the 33rd consecutive year on the DIF's and the FRF's financial statements.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 31,
+          "quote": "In commenting on a draft of this report, FDIC stated that it was pleased to receive unmodified opinions for the 33rd consecutive year on the DIF's and the FRF's financial statements."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 26,
+          "score": 0.3193
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 27,
+          "score": 0.2875
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 30,
+          "score": 0.2589
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.2532
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 31,
+          "score": 0.2502
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "score": 0.249
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A06",
+      "question": "What were the SEC's total budgetary resources for fiscal year 2025?",
+      "status": "answered",
+      "answer": "For the year ended September 30, 2025, the SEC's total budgetary resources equaled $3.1 billion.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "quote": "For the year ended September 30, 2025, the SEC's total budgetary resources equaled $3.1 billion."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3475
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.3131
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "score": 0.309
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2579
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2521
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 18,
+          "score": 0.2509
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A07",
+      "question": "What were the SEC's total assets at September 30, 2025?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 20,
+          "score": 0.2978
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 69,
+          "score": 0.2962
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2792
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "score": 0.276
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2737
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 63,
+          "score": 0.2594
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A08",
+      "question": "What were the SEC's total earned revenues for fiscal year 2025?",
+      "status": "answered",
+      "answer": "Total Earned Revenues for the year ended September 30, 2025, were $4.4 billion.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "quote": "Total Earned Revenues for the year ended September 30, 2025, were $4.4 billion."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3475
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.3378
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.3268
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2533
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 241,
+          "score": 0.2515
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 40,
+          "score": 0.2476
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A09",
+      "question": "What was the Section 31 fee rate cited in the SEC's FY 2025 results of operations?",
+      "status": "answered",
+      "answer": "The Section 31 fee rate was $27.80 per million.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "quote": "Due to the Section 31 fee rate of\n$27.80 per million, and FY 2025 securities transaction\nvolume, offsetting collections resulting from Section 31\ntransaction fees surpassed the SEC's Budget Authority\nof $2.2 billion as of February 2025."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.4227
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 36,
+          "score": 0.3042
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 7,
+          "score": 0.3011
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 35,
+          "score": 0.297
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 19,
+          "score": 0.292
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 18,
+          "score": 0.2905
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A10",
+      "question": "How many SEC employees participated in VERA or VSIP as of September 30, 2025, and at what cost?",
+      "status": "answered",
+      "answer": "As of September 30, 2025, 472 SEC employees participated in VERA or VSIP at a cost of $23.9 million.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "quote": "As of September 30, 2025, 472 employees participated at a cost of $23.9 million."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 22,
+          "score": 0.3034
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 69,
+          "score": 0.2887
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 160,
+          "score": 0.2872
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 60,
+          "score": 0.2751
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 41,
+          "score": 0.2696
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 100,
+          "score": 0.2682
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A11",
+      "question": "What type of audit opinion did the SEC receive on its FY 2025 financial statements?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.3425
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 65,
+          "score": 0.2982
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 166,
+          "score": 0.2971
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.2685
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 18,
+          "score": 0.2653
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 39,
+          "score": 0.264
+        }
+      ],
+      "retrieval_hit": false,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A12",
+      "question": "What was the U.S. government's budget deficit for fiscal year 2025?",
+      "status": "answered",
+      "answer": "For fiscal year 2025, the budget deficit decreased by $41.4 billion (2.3 percent) to $1.8 trillion.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "quote": "\u2022 The budget deficit de creased by $41.4 b illion (2.3 percent) to $1.8 trillion and net operating cost"
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.3461
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3318
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.33
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3096
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 230,
+          "score": 0.2999
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.2858
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A13",
+      "question": "What was the federal government's net operating cost for FY 2025?",
+      "status": "answered",
+      "answer": "The federal government's net operating cost for FY 2025 decreased by $292.0 billion to $2.1 trillion.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 11,
+          "quote": "The government's \u201cbottom line\u201d net operating cost de creased $292.0 billion (12.2 percent) during FY 2025\nto $2.1 trillion."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "score": 0.3898
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 22,
+          "score": 0.3482
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 11,
+          "score": 0.3457
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 25,
+          "score": 0.344
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 26,
+          "score": 0.3416
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3371
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A14",
+      "question": "What were the U.S. government's gross costs in FY 2025?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.4392
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 9,
+          "score": 0.3756
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "score": 0.3361
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 87,
+          "score": 0.3016
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.2934
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 98,
+          "score": 0.2781
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A15",
+      "question": "What was the debt-to-GDP ratio at the end of FY 2025?",
+      "status": "answered",
+      "answer": "The debt-to-GDP ratio was 99 percent at the end of FY 2025.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 33,
+          "quote": "The debt was 99 percent of GDP at the end of FY 2025."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 33,
+          "score": 0.4862
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 16,
+          "score": 0.4376
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 35,
+          "score": 0.4236
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.42
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.4167
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 35,
+          "score": 0.4147
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A16",
+      "question": "What debt-to-GDP ratio is projected for 2100 under current policy?",
+      "status": "answered",
+      "answer": "Under current policy and based on the report's assumptions, the debt-to-GDP ratio is projected to reach 576 percent by 2100.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "quote": "Under current policy and based on this report's assumptions, it is projected to reach 576 percent by 2100."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.3718
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 16,
+          "score": 0.3621
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "score": 0.3293
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 146,
+          "score": 0.3284
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 39,
+          "score": 0.318
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 38,
+          "score": 0.3132
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A17",
+      "question": "By how much are 75-year social insurance expenditures projected to exceed social insurance revenues?",
+      "status": "error",
+      "answer": null,
+      "reason": "Gemini returned HTTP 503. Check the model ID, API key and quota.",
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 22,
+          "score": 0.2781
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 22,
+          "score": 0.2742
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 10,
+          "score": 0.2676
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 221,
+          "score": 0.2223
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 149,
+          "score": 0.201
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 149,
+          "score": 0.1935
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": false,
+      "citation_correct": false
+    },
+    {
+      "id": "A18",
+      "question": "How much did customs duties increase in FY 2025?",
+      "status": "answered",
+      "answer": "Customs duties increased by $133.9 billion (275.3 percent) to $210.3 billion in FY 2025.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "quote": "Notably, customs duties increased $133.9 billion (275.3 percent) to $210.3 billion mostly due to multiple tariffs implemented during FY 2025."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 25,
+          "score": 0.2659
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 73,
+          "score": 0.2529
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 174,
+          "score": 0.2464
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.2429
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 73,
+          "score": 0.2382
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 28,
+          "score": 0.2335
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A19",
+      "question": "For how many years has GAO issued a disclaimer of opinion on the government's consolidated financial statements?",
+      "status": "answered",
+      "answer": "GAO has issued a disclaimer of opinion on the accrual-based, consolidated financial statements for the past 28 years.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "quote": "As it has for the past 28 years, GAO issued a disclaimer of opinion on the accrual -based, consolidated financial statements for the fiscal years ended September 30, 2025, and 2024."
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.3941
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 217,
+          "score": 0.3547
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 234,
+          "score": 0.3473
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 50,
+          "score": 0.3356
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 23,
+          "score": 0.3329
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 79,
+          "score": 0.3287
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "A20",
+      "question": "How many federal consolidation entities provided financial information for the FY 2025 Financial Report?",
+      "status": "answered",
+      "answer": "The Financial Report is prepared from financial information provided by 167 federal consolidation entities.",
+      "reason": null,
+      "citations": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "quote": "The Financial Report is prepared from the financial information provided by 167 federal consolidation entities (see"
+        }
+      ],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 1,
+          "score": 0.4114
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 8,
+          "score": 0.3663
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.3333
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 159,
+          "score": 0.3113
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 205,
+          "score": 0.3047
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 19,
+          "score": 0.297
+        }
+      ],
+      "retrieval_hit": true,
+      "answer_correct": true,
+      "citation_correct": true
+    },
+    {
+      "id": "U01",
+      "question": "What was Apple's total revenue in fiscal year 2025?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3824
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 223,
+          "score": 0.2152
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 54,
+          "score": 0.2081
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 40,
+          "score": 0.2066
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 237,
+          "score": 0.2048
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2004
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": true,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U02",
+      "question": "What was Tesla's market value at the end of 2025?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 21,
+          "score": 0.2734
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 168,
+          "score": 0.261
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 35,
+          "score": 0.2395
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 33,
+          "score": 0.2387
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 215,
+          "score": 0.2292
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 15,
+          "score": 0.2288
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": true,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U03",
+      "question": "How many banks failed in 2026?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 40,
+          "score": 0.1491
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 122,
+          "score": 0.1451
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 39,
+          "score": 0.1314
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 107,
+          "score": 0.1259
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 223,
+          "score": 0.1152
+        },
+        {
+          "filename": "fdic-2024-annual-report-financial-section.pdf",
+          "page": 12,
+          "score": 0.1141
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": true,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U04",
+      "question": "What was the S&P 500 index level at the end of fiscal year 2025?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3068
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 23,
+          "score": 0.2915
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 21,
+          "score": 0.287
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2701
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 222,
+          "score": 0.2614
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 56,
+          "score": 0.2577
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": true,
+      "false_answer_shown": false
+    },
+    {
+      "id": "U05",
+      "question": "What salary did the SEC Chairman earn in fiscal year 2025?",
+      "status": "not_found",
+      "answer": "Not found in these documents.",
+      "reason": null,
+      "citations": [],
+      "retrieved": [
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 1,
+          "score": 0.3637
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 40,
+          "score": 0.2351
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 56,
+          "score": 0.2152
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 53,
+          "score": 0.2114
+        },
+        {
+          "filename": "sec-fy2025-agency-financial-report.pdf",
+          "page": 21,
+          "score": 0.2059
+        },
+        {
+          "filename": "treasury-fy2025-financial-report-us-government.pdf",
+          "page": 223,
+          "score": 0.1984
+        }
+      ],
+      "retrieval_hit": null,
+      "not_found_correct": true,
+      "false_answer_shown": false
+    }
+  ]
+}

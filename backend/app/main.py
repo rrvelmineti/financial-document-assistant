@@ -15,7 +15,7 @@ from .answer import answer_question
 from .config import ROOT, load_settings
 from .documents import DocumentError
 from .embeddings import make_embedder
-from .store import Store
+from .store import REVIEW_DECISIONS, Store
 
 FRONTEND = ROOT / "frontend" / "dist"
 
@@ -23,6 +23,12 @@ FRONTEND = ROOT / "frontend" / "dist"
 class Ask(BaseModel):
     question: str = Field(min_length=3, max_length=1000)
     document_ids: list[int] | None = None
+
+
+class Review(BaseModel):
+    decision: str = Field(description="One of: " + ", ".join(REVIEW_DECISIONS))
+    reviewer: str = Field(min_length=1, max_length=100)
+    note: str = Field(default="", max_length=2000)
 
 
 def public(doc):
@@ -72,6 +78,26 @@ def create_app(settings=None, opener=None):
         latency = round((time.perf_counter() - start) * 1000)
         store.log_question(body.question, result, latency)
         return {**result, "latency_ms": latency}
+
+    @app.get("/api/review-queue")
+    def review_queue(limit: int = 50):
+        """Withheld and not-found answers that a person has not reviewed yet."""
+        return [public(q) for q in store.review_queue(max(1, min(limit, 500)))]
+
+    @app.post("/api/reviews/{question_id}", status_code=201)
+    def review(question_id: int, body: Review):
+        try:
+            saved = store.record_review(question_id, body.decision, body.reviewer, body.note)
+        except ValueError as exc:
+            raise HTTPException(422, str(exc)) from None
+        if saved is None:
+            raise HTTPException(404, "No such question.")
+        return public(saved)
+
+    @app.get("/api/usage")
+    def usage():
+        """Adoption and quality figures for the hypercare period after go-live."""
+        return store.usage_report()
 
     if FRONTEND.exists():
         app.mount("/assets", StaticFiles(directory=FRONTEND / "assets"), name="assets")

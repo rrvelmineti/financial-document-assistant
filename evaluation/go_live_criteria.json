@@ -1,0 +1,44 @@
+{
+  "_about": "Go-live criteria agreed with the client before the pilot. Each check reads one figure from the evaluation summary. 'blocking' checks must pass for a GO; the others are reported and can be accepted with a sign-off note.",
+  "checks": [
+    {
+      "id": "false_answers",
+      "label": "No invented answers to questions the documents cannot answer",
+      "metric": "false_answers_on_unanswerable",
+      "max": 0,
+      "blocking": true
+    },
+    {
+      "id": "answer_accuracy",
+      "label": "Answer accuracy (verified and contains the expected figure)",
+      "metric": "answers_correct",
+      "of": "answerable",
+      "min_share": 0.8,
+      "blocking": true
+    },
+    {
+      "id": "citation_accuracy",
+      "label": "Citation accuracy (cites a page with the evidence)",
+      "metric": "citations_correct",
+      "of": "answerable",
+      "min_share": 0.85,
+      "blocking": true
+    },
+    {
+      "id": "not_found",
+      "label": "Unanswerable questions correctly said not found",
+      "metric": "not_found_correct",
+      "of": "unanswerable",
+      "min_share": 0.8,
+      "blocking": false
+    },
+    {
+      "id": "retrieval",
+      "label": "Retrieval: evidence page among retrieved passages",
+      "metric": "retrieval_hits",
+      "of": "answerable",
+      "min_share": 0.8,
+      "blocking": false
+    }
+  ]
+}
